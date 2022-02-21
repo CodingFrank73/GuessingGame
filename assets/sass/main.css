@@ -1,7 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 * {
   padding: 0;
   margin: 0;
-  box-sizing: 0;
+  box-sizing: border-box;
 }
 
 input::-webkit-outer-spin-button,
@@ -10,25 +11,26 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-.fieldset-top, .fieldset-bottom, .fieldset-middle {
-  border: 1px, solid black;
+p, button, input, label, div {
+  font-family: "Roboto", sans-serif;
 }
 
 #formRadio, #formShow, #formGuess {
   margin: 2% auto;
-  width: 63%;
+  width: 70%;
 }
 
 #numberOfRounds, #input {
   outline: none;
 }
 
-#numberOfRounds {
+#numberOfRounds, #formShow {
   display: none;
 }
 
 #help {
   text-align: center;
+  font-size: 0.7rem;
 }
 
 .fieldset-top p {
@@ -43,7 +45,7 @@ input::-webkit-inner-spin-button {
   justify-self: center;
 }
 .fieldset-top .select-rounds-area #numberOfRounds {
-  width: 50%;
+  width: 70px;
   padding: 8px;
   justify-items: center;
 }
@@ -75,4 +77,18 @@ input::-webkit-inner-spin-button {
 .fieldset-bottom .select-guess-area button {
   margin: 10px auto;
   padding: 10px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  #formRadio, #formShow, #formGuess {
+    width: 50%;
+  }
+
+  #help {
+    font-size: 1rem;
+  }
+
+  .fieldset-top .select-rounds-area {
+    grid-template-columns: 50% 50%;
+  }
 }/*# sourceMappingURL=main.css.map */

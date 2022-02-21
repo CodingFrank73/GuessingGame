@@ -13,7 +13,7 @@
     <section>
         <form action="" onsubmit="return false" id="formRadio">
             <fieldset class="fieldset-top">
-                <p>in how many rounds you think you can guess the number?</p>
+                <p>in how many rounds you think you can guess the number (1 - 100)?</p>
                 <div class="select-rounds-area">
                     <div>
                         <input type="radio" name="rounds" id="four" value="4" checked>
@@ -30,8 +30,9 @@
                     <div>
                         <input type="radio" name="rounds" id="custom" value="custom">
                         <label for="custom">custom</label>
+                        <input type="number" name="numberOfRounds" id="numberOfRounds" oninput="update()">
                     </div>
-                    <input type="number" name="numberOfRounds" id="numberOfRounds" oninput="update()">
+
                 </div>
 
             </fieldset>
