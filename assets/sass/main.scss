@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.fieldset-top, .fieldset-bottom, .fieldset-middle{
+    border: 1px, solid black;
+}
+
+#formRadio, #formShow, #formGuess{
+    margin: 2% auto;
+    width: 63% ;
+}
+
+
+.fieldset-top{
+    
+    & .select-rounds-area{
+        margin-left: 30%;
+        padding: 8% 0;
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-self: center;
+
+        & #numberOfRounds{
+            width: 50%;
+            padding: 8px;
+            justify-items: center;
+        }
+    }
+}
+
+
+    
+
+.fieldset-bottom{
+
+    & .select-guess-area{
+            
+        display: flex;
+        flex-direction: column;
+    
+        input{
+            width: 40%;
+            padding: 8px;
+            margin: 5% auto;
+            text-align: center
+        };
+    
+        button{
+            margin: 10px auto;
+            padding: 10px 20px;
+        }
+    }
+}
+
+
+
+#formRadio{
+    
+
+    p{
+        text-align: center;
+        padding: 5% 10%;
+    }
+}
+
+#numberOfRounds, #input{
+    outline: none;
+}
+
+#numberOfRounds{
+    display: none;
+}
