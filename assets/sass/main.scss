@@ -19,8 +19,25 @@ input::-webkit-inner-spin-button {
     width: 63% ;
 }
 
+#numberOfRounds, #input{
+    outline: none;
+}
+
+#numberOfRounds{
+    display: none;
+}
+
+#help{
+    text-align: center;
+}
+
 
 .fieldset-top{
+
+    p{
+        text-align: center;
+        padding: 5% 10%;
+    }
     
     & .select-rounds-area{
         margin-left: 30%;
@@ -38,7 +55,25 @@ input::-webkit-inner-spin-button {
     }
 }
 
+.fieldset-middle{
 
+    & .select-show-area{
+        padding: 8% 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-self: center;
+
+        p{
+            text-align: center;
+            padding: 5% 10%;
+        }
+
+        & #counter{
+            text-align: center;
+        }
+        
+    }
+}
     
 
 .fieldset-bottom{
@@ -60,23 +95,4 @@ input::-webkit-inner-spin-button {
             padding: 10px 20px;
         }
     }
-}
-
-
-
-#formRadio{
-    
-
-    p{
-        text-align: center;
-        padding: 5% 10%;
-    }
-}
-
-#numberOfRounds, #input{
-    outline: none;
-}
-
-#numberOfRounds{
-    display: none;
 }

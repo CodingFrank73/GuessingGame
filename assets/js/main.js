@@ -35,14 +35,14 @@ function getRandomIntInclusive() {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-let rounds = 2;
+let rounds = 4;
 let randomValue = getRandomIntInclusive();
 let anzahlRunde = 0;
 
 function start() {
     if (anzahlRunde == 0) {
-        document.getElementById("formRadio").style.display = "none"
-        document.getElementById("formShow").style.display = "flex"
+        document.getElementById("formRadio").style.display = "none";
+        document.getElementById("formShow").style.display = "flex";
     }
 
     let input = document.getElementById("input").value;
@@ -51,14 +51,11 @@ function start() {
         let text;
 
         if (input == randomValue) {
-            text = "treffer"
-            console.log("treffer");
+            text = `${anzahlRunde} treffer`;
         } else if (input > randomValue) {
-            text = "suche kleiner";
-            console.log("suche kleiner");
+            text = `${anzahlRunde + 1} - suche kleiner`;
         } else {
-            text = "suche größer";
-            console.log("suche größer");
+            text = `${anzahlRunde + 1} - suche größer`;
         }
 
         anzahlRunde++;
